@@ -1,0 +1,114 @@
+@import "mixins";
+@import "variables";
+@import "reset";
+/*---------------------- M I A N S E C T I O N ----------------------*/
+@mixin blockquote($borderWidth: 2px,$borderColor: green,$backgroundColor: #fff) {
+  background: $backgroundColor;
+  padding-left: 10px;
+  font:{
+    family: $fontFamily;
+  }
+  margin:{
+    top: 10px;
+    right: 20px;
+    left: 20px;
+  }
+  border:{
+    left-width: $borderWidth;
+    left-style: solid;
+    left-color: $borderColor;
+  }
+
+  min-height: 60px;
+  line-height: 30px;
+}
+.main {
+  transition: all .5s;
+  padding: 0;
+  border: {
+    color: black;
+    width: 3px;
+    style: solid;
+  }
+  &:hover{
+    border:{
+      color: $borderColor;
+    }
+    @include border-radius(35px);
+  }
+  margin:{
+    left: 10px;
+    top: 50px;
+    right: 10px;
+    bottom: 50px;
+  }
+  h1{
+    margin: 0;
+    padding:{
+      top: 30px;
+      right: 10px;
+      bottom: 30px;
+      left: 10px;
+    }
+    font:{
+      family: Arial;
+      size: 30px;
+      weight: normal;
+      style: oblique;
+    }//font
+    text:{
+      align: center;
+    }//text
+    &:hover{
+      color: $hoverColor;
+      cursor: pointer;
+    }//hover
+  }//h1
+  @media (max-width: 900px){
+    background: red;
+  }
+}//.main
+
+.socials{
+  @mixin mixinSocial {
+    width: 30px;
+    height: 30px;
+    border:{
+      radius:5px;
+    }
+  }
+  li {
+    display: inline-block;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    border:{
+      radius:5px;
+    }
+  }
+  .red{
+    background-color: red;
+    @extend li;
+  }
+  .blue{
+    background-color: blue;
+    @extend li;
+  }
+  .green{
+    background-color: green;
+    @extend li;
+  }
+  .aqua{
+    background-color: aqua;
+    @extend li;
+  }
+}
+.blockquote-warning{
+  @include blockquote(10px,orange,gray);
+}
+.blockquote-danger{
+  @include blockquote(15px,red,white);
+}
+.blockquote-success{
+  @include blockquote(25px,greenyellow,white);
+}

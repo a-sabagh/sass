@@ -1,0 +1,172 @@
+/* *************** R E S E T  *************** */
+body {
+  background: #e6e6e6;
+}
+
+*, html, body, div, dl, dt, dd, ul, ol, li, .socials .red, .socials .blue, .socials .green, .socials .aqua, h1, h2, h3, h4, h5, h6, pre, form, label, table, fieldset, input, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol, ul, li, .socials .red, .socials .blue, .socials .green, .socials .aqua {
+  list-style: none;
+}
+
+q:before, q:after {
+  content: "";
+}
+
+* {
+  outline: none;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+a {
+  color: inherit;
+  backgornd-color: #fff;
+}
+a:hover, a:visited, a:focus, a:active {
+  outline: none !important;
+  text-decoration: none !important;
+}
+a img {
+  border: none;
+}
+
+p {
+  direction: ltr;
+}
+
+button {
+  overflow: visible;
+}
+
+hr {
+  margin: 15px 0;
+}
+
+/*---------------------- M I A N S E C T I O N ----------------------*/
+.main {
+  transition: all .5s;
+  padding: 0;
+  border-color: black;
+  border-width: 3px;
+  border-style: solid;
+  margin-left: 10px;
+  margin-top: 50px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+}
+.main:hover {
+  border-color: aqua;
+  border-radius: 35px;
+  -moz-border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -o-border-radius: 35px;
+}
+.main h1 {
+  margin: 0;
+  padding-top: 30px;
+  padding-right: 10px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  font-family: Arial;
+  font-size: 30px;
+  font-weight: normal;
+  font-style: oblique;
+  text-align: center;
+}
+.main h1:hover {
+  color: red;
+  cursor: pointer;
+}
+@media (max-width: 900px) {
+  .main {
+    background: red;
+  }
+}
+
+.socials li, .socials .red, .socials .blue, .socials .green, .socials .aqua {
+  display: inline-block;
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+.socials .red {
+  background-color: red;
+}
+.socials .blue {
+  background-color: blue;
+}
+.socials .green {
+  background-color: green;
+}
+.socials .aqua {
+  background-color: aqua;
+}
+
+.blockquote-warning {
+  background: gray;
+  padding-left: 10px;
+  font-family: Arial;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-left-width: 10px;
+  border-left-style: solid;
+  border-left-color: orange;
+  min-height: 60px;
+  line-height: 30px;
+}
+
+.blockquote-danger {
+  background: white;
+  padding-left: 10px;
+  font-family: Arial;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-left-width: 15px;
+  border-left-style: solid;
+  border-left-color: red;
+  min-height: 60px;
+  line-height: 30px;
+}
+
+.blockquote-success {
+  background: white;
+  padding-left: 10px;
+  font-family: Arial;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-left-width: 25px;
+  border-left-style: solid;
+  border-left-color: greenyellow;
+  min-height: 60px;
+  line-height: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

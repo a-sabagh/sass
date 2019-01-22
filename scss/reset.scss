@@ -1,0 +1,58 @@
+/* *************** R E S E T  *************** */
+body{
+  background: $bodyColor;
+}
+
+ *, html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, label, table, fieldset, input, p, blockquote, th, td {
+    margin:0;
+    padding:0
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+fieldset, img {
+    border:0
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style:normal;
+    font-weight:normal
+}
+ol, ul, li {
+    list-style:none
+}
+q:before, q:after {
+    content:''
+}
+* {
+    outline: none;
+}
+strong {
+    font-weight: bold
+}
+em {
+    font-style: italic
+}
+a{
+  color:inherit;
+  backgornd:{
+    color: #fff;
+  }
+  &:hover,&:visited,&:focus,&:active{
+    outline: none !important;
+    text-decoration: none !important;
+  }
+  img {
+      border:none
+  }
+}
+p {
+    @if $language == 'fa' {direction: rtl;}
+    @else if $language == 'en' {direction: ltr;}
+}
+button {
+  overflow: visible;
+}
+hr{
+    margin: 15px 0;
+}
